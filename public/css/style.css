@@ -1,0 +1,30 @@
+#map {
+    height: 70%;
+    width: 100%;
+    background-color: grey;
+}
+
+.mapContainer {
+    width:50%;
+    margin-left:20vw;
+}
+
+.button {
+    background-image: url('../img/UBER_API_Button_2x_Black_10px_round.png');
+    background-size: cover;
+    width: 280px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.margin-top {
+    margin-top:50px;
+}
+
+#time {
+    text-align: right;
+    margin-top: 2%;
+    padding-top: 12px;
+    padding-right: 14px;
+    color: ghostwhite;
+}

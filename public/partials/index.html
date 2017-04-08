@@ -1,0 +1,54 @@
+<div class="jumbotron text-center">
+    <h1>CAB APP</h1>
+    <p>This page demonstrates an <span class="text-danger">uber like</span> application. Select the time you want to reach and move the source and destination markers on the map and get an estimate of travel time and fare for UberGo.</p>    
+</div>
+
+<div class="container text-center" style="padding-left:33vw;">
+    <div class="row">
+        <div class='col-sm-4'>
+            <div class="form-group">
+                <label for="date">Reach at :</label>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' name="arrivalTime" class="form-control" id="userTime"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mapContainer">
+    <div id="map"></div>
+</div>
+
+<div class="container text-center margin-top" style="padding-left:33vw;">
+    <form class="col-md-4">
+        <div class="form-group">
+            <label for="email">EMAIL :</label>
+            <input type="email" class="form-control" id="email" ng-model="email" placeholder="Enter email"/>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="checkStatus()">CHECK STATUS</button>
+        </div>
+    </form>
+</div>
+
+ 
+<div class="button margin-top">
+    <p id="time">IN {{uberGo.duration / 60}} MIN FOR {{uberGo.estimate}}</p>
+</div>
+
+
+<div class="jumbotron text-center margin-top">
+      <!--<div id="current">Nothing yet...</div>-->
+      <div>
+         <p> Source Lat: {{sourceLat}} &nbsp; Source Lng: {{sourceLng}} </p>
+         <p> Destination Lat: {{destLat}} &nbsp; Destination Lng: {{destLng}} </p>
+      </div>
+</div>
+
+
+
